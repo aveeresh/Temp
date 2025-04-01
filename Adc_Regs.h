@@ -1,6 +1,13 @@
 #ifndef ADC_REGS_H
 #define ADC_REGS_H
 
+/* 
+· Document Title: OBD Stack
+· Version: V1.0
+· Date: 31/3/25
+· Author: Akshay Naik
+*/
+
 #include "Types.h"
 
 typedef union
