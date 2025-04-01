@@ -3,12 +3,24 @@
 
 /* 
 · Document Title: OBD Stack
-· Version: V1.0
+· Version: V1.1
 · Date: 31/3/25
 · Author: Akshay Naik
 */
 
 #include "Types.h"
+
+typedef union
+{
+	uint32 R;
+	struct
+	{
+		uint32 AccOff:1;
+		uint32 AccBP:1;
+		uint32 eFCAN:1;
+		uint32 :29;
+	}B;
+}Can_AFMR_t;
 
 typedef union
 {
